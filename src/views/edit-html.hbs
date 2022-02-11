@@ -3,14 +3,14 @@
     <div class="col-md-5 offset-md-3">
       <div class="card card-body bg-dark p-4 text-white rounded-0">
 
-        <h1>Update a Task</h1>
+        <h1>Actualize la tarea</h1>
         <form action="/tasks/{{task._id}}/edit" method="POST">
 
           <div class="mb-3">
             <input
               type="text"
               name="title"
-              placeholder="Title"
+              placeholder="Titulo"
               value="{{task.title}}"
               class="form-control rounded-0 bg-dark text-white"
             />
@@ -20,13 +20,13 @@
             <textarea
               name="description"
               rows="3"
-              placeholder="Adda Description"
+              placeholder="Description"
               class="form-control rounded-0 bg-dark text-white"
             >{{task.description}}
             </textarea>
           </div>
 
-          <button class="btn btn-primary">Update</button>
+          <button class="btn btn-primary">Actualizar</button>
 
         </form>
       </div>
